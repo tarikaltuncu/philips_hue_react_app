@@ -1,6 +1,7 @@
-# Docker
+# Running in Docker Container
 `docker build -t hue_react .`
-`docker run -d -it -p 8000:80/tcp --name hue_react hue_react`
+
+`docker run -d -it -p 8001:80/tcp --name hue_react --restart unless-stopped hue_react`
 
 # philips_hue_react_app
 This is a simple ReactJS web application that shows how the Philips Hue API can be used for controlling Philips Hue lights.
